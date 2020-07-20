@@ -1,0 +1,35 @@
+.u-flex {
+  display: flex;
+}
+
+.u-inline-flex {
+	display: inline-flex;
+}
+
+.u-flex-space-between {
+  justify-content: space-between;
+}
+
+.u-flex-space-evenly {
+  justify-content: space-evenly;
+}
+
+.u-flex-horizontal-center {
+  justify-content: center;
+}
+
+.u-flex-vertical-center {
+  align-items: center;
+}
+
+.u-flex-column {
+  flex-direction: column;
+}
+
+.u-flex-horizontal-center {
+  justify-content: center;
+}
+
+.u-flex-direction-column {
+  flex-direction: column;
+}

@@ -1,0 +1,54 @@
+// =============================================================================
+// :: Colors
+// =============================================================================
+/**
+ * Every color is defined as a HSL (HUE-STATURATION_LIGHTNESS) notation. Based
+ * on the HUE and the LIGHTNESS we give the color a meaningfull and unique name.
+ * These colors are not to be used outside of this file.
+ *
+ * The global colors are used within the different components and should
+ * get a more reusable logical name.
+ *
+ * IMPORTANT TO NOTE: KEEP THIS FILE MANAGEABLE, CLEAN AND CONSISTENT!
+ */
+// =============================================================================
+// :: Internal colors
+// =============================================================================
+// Black - grey - white
+$black: hsla(0, 0%, 0%, 1);
+$black-faded: hsla(0, 0%, 0%, 0.16);
+$black-light-faded: hsla(0, 0%, 0%, 0.5);
+$grey-10: hsla(0, 0%, 10%, 1);
+$grey-20: hsla(0, 0%, 20%, 1);
+$grey-30: hsla(0, 0%, 30%, 1);
+$grey-40: hsla(0, 0%, 40%, 1);
+$grey-49: hsla(0, 0%, 49%, 1);
+$grey-50: hsla(0, 0%, 50%, 1);
+$grey-60: hsla(0, 0%, 60%, 1);
+$grey-69: hsla(0, 0%, 69%, 1);
+$grey-70: hsla(0, 0%, 70%, 1);
+$grey-80: hsla(0, 0%, 80%, 1);
+$grey-87: hsla(0, 0%, 87%, 1);
+$grey-90: hsla(0, 0%, 90%, 1);
+$grey-96: hsla(0, 0%, 96%, 1);
+$grey-99: hsla(0, 0%, 99%, 1);
+$white: hsla(0, 0%, 100%, 1);
+
+// =============================================================================
+// :: Global Colors
+// =============================================================================
+$primary-color: hsl(318, 69%, 33%);
+$secondary-color: hsl(187, 62%, 66%);
+$danger-color: hsl(359, 68%, 36%);
+$warning-color: hsl(60, 92%, 71%);
+$highlight-color: hsl(318, 100%, 73%);
+$success-color: hsla(90, 100%, 44%, 0.75);
+
+$text-color-base: $grey-20;
+$text-color-black: $black;
+$text-color-light: $white;
+// =============================================================================
+// :: UI colors
+// =============================================================================
+$dark-purple: hsl(300, 35%, 10%);
+$tumbleweed-brown: hsl(27, 34%, 65%);

@@ -1,0 +1,85 @@
+// =============================================================================
+// :: Breakpoints
+// =============================================================================
+/**
+ * The breakpoints are placed within a map for readability and to generate
+ * certain layouts. There are different options on naming these breakpoints:
+ *
+ * non-contextual:
+ * micro - tiny - small - base - medium - large - huge - massive
+ *
+ * contextual:
+ * https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-8
+ * 8d6a5ba1862/
+ * phone (360/480) - tablet portrait (640) - tablet landscape (960) -
+ * desktop (1200) - big desktop (1800)
+ *
+ * contextual:
+ * https://ricostacruz.com/til/css-media-query-breakpoints
+ * phone (default) - mobile landscape (480) - tablet portrait (768) -
+ * tablet landscape (992) - desktop (1200)
+ *
+ * viewport-3 (360) - viewport-4 (480) - viewport-7 (768) - viewport-9 (992) -
+ * viewport-12 (1200)
+ *
+ *
+ *
+ * Params:
+ * - spacing: the spacing used on the breakpoint width (grid)
+ * - viewport-spacing: the spacing between the viewport and its content
+ * (container)
+ * - width: the width of a breakpoint, this can be manipuled with @media
+ * - grid-suffixicate: generates responsive classes ONLY for the grid (careful
+ * with this, it generates a lot of classes and takes up file size)
+ */
+
+// =============================================================================
+// :: Default breakpoints
+// =============================================================================
+$breakpoints: (
+	"viewport-3": (
+		width: 36rem,
+		spacing: 2rem,
+		viewport-spacing: 1.6rem,
+		grid-suffixicate: false
+	),
+	"viewport-4": (
+		width: 48rem,
+		spacing: 2rem,
+		viewport-spacing: 2.4rem,
+		grid-suffixicate: true
+	),
+	"viewport-7": (
+		width: 76.8rem,
+		spacing: 3rem,
+		viewport-spacing: 3.2rem,
+		grid-suffixicate: true
+	),
+	"viewport-9": (
+		width: 99.2rem,
+		spacing: 4rem,
+		viewport-spacing: 4.5rem,
+		grid-suffixicate: true
+	),
+	"viewport-12": (
+		width: 120rem,
+		spacing: 5rem,
+		viewport-spacing: 6rem,
+		grid-suffixicate: false
+  ),
+  "viewport-14": (
+		width: 140rem,
+		spacing: 5rem,
+		viewport-spacing: 6rem,
+		grid-suffixicate: false
+	)
+);
+
+// =============================================================================
+// :: Reversed breakpoints
+// =============================================================================
+/**
+ * Usefull when developing desktop-first, using respond-to mixin or using
+ * responsive suffixes in the classes (\@)
+ */
+$breakpoints-reversed: reverse-breakpoints($breakpoints);

@@ -1,0 +1,16 @@
+// =============================================================================
+// :: Clearfix
+// =============================================================================
+/**
+ * Apply a clear fix on the parent where blocks of content/components are placed
+ * outside their flow using the float property
+ */
+@mixin clear-fix() {
+
+	&::after {
+		content: "";
+
+		clear: both;
+		display: table;
+	}
+}

@@ -1,0 +1,26 @@
+// =============================================================================
+// :: Paragraph
+// =============================================================================
+/**
+ * Paragraph styles defined to give any component the possibility to extend from
+ * a certain style. When an element uses the same styling as a text-like block,
+ * this does not mean it is a <p>, <small>, <strong>, ... .
+ */
+
+// =============================================================================
+// :: P
+// =============================================================================
+@mixin extend-paragraph-base() {
+	font-family: $font-family-secondary;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-base;
+}
+
+// =============================================================================
+// :: Small
+// =============================================================================
+@mixin extend-small-base() {
+	font-family: $font-family-secondary;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-1_4;
+}

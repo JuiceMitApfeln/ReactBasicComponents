@@ -1,0 +1,16 @@
+// =============================================================================
+// :: Progressbar
+// =============================================================================
+.c-progressBar {
+  background-color: $dark-purple;
+  height: 0.001rem;
+  display: block;
+  border-radius: 50px;
+  height: 0.4rem;
+  margin: 0 0.25rem;
+  &--progress {
+    height: 0.4rem;
+    border-radius: 45px;
+    background-color: $secondary-color;
+  }
+}

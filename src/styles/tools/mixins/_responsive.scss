@@ -1,0 +1,51 @@
+// =============================================================================
+// :: Responsive prop
+// =============================================================================
+/**
+ * Create a CSS property that is responsive by defining a minimum and maximum
+ * value. For example: responsive font-sizes.
+ *
+ * $props: the properties to make responsive, each property is separated by a
+ * space
+ * $responsive: the value that should scale with the viewport width, expressed
+ * in vw units
+ * $min: the minimum value, the $responsive does not go lower than this
+ * $max: the maximum value, the $responsive does not go higher than this
+ * $fallback: A fallback when the vw unit is not supported by the browser
+ */
+@mixin responsive-prop($props, $responsive, $min, $max: false, $fallback: false) {
+	$min: if(unit($min) == "rem", px($min), $min);
+
+	@if $max {
+		$max: if(unit($max) == "rem", px($max), $max);
+	}
+
+	$responsive-unitless: $responsive / ($responsive - $responsive + 1);
+	$min-breakpoint: $min / $responsive-unitless * 100;
+
+	@include respond-to($min-breakpoint) {
+		@each $prop in $props {
+			#{$prop}: $min;
+		}
+	}
+
+	@if $max {
+		$max-breakpoint: $max / $responsive-unitless * 100;
+
+		@include respond-at($max-breakpoint) {
+			@each $prop in $props {
+				#{$prop}: $max;
+			}
+		}
+	}
+
+	@if $fallback {
+		@each $prop in $props {
+			#{$prop}: $fallback;
+		}
+	}
+
+	@each $prop in $props {
+		#{$prop}: $responsive;
+	}
+}

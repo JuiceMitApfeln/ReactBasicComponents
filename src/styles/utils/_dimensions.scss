@@ -1,0 +1,60 @@
+/* stylelint-disable declaration-no-important */
+// =============================================================================
+// :: Settings
+// =============================================================================
+$stepPx: 1px;
+$stepPercent: 1%;
+$stepRem: 1rem;
+$amountPx: 100;
+$amountPercent: 100;
+$amountRem: 100;
+
+// =============================================================================
+// :: Height
+// =============================================================================
+@for $i from 0 through $amountPx {
+  .u-height-#{$i}px {
+    height: $i * $stepPx !important;
+  }
+}
+@for $i from 0 through $amountPercent {
+  .u-height-#{$i}percent {
+    height: $i * $stepPercent !important;
+  }
+}
+@for $i from 0 through $amountRem {
+  .u-height-#{$i}rem {
+    height: $i * $stepRem !important;
+  }
+}
+
+
+/* stylelint-disable declaration-no-important */
+// =============================================================================
+// :: Settings
+// =============================================================================
+$stepPx: 1px;
+$stepPercent: 1%;
+$stepRem: 1rem;
+$amountPx: 100;
+$amountPercent: 100;
+$amountRem: 100;
+
+// =============================================================================
+// :: Height
+// =============================================================================
+@for $i from 0 through $amountPx {
+  .u-width-#{$i}px {
+    width: $i * $stepPx !important;
+  }
+}
+@for $i from 0 through $amountPercent {
+  .u-width-#{$i}percent {
+    width: $i * $stepPercent !important;
+  }
+}
+@for $i from 0 through $amountRem {
+  .u-width-#{$i}rem {
+    width: $i * $stepRem !important;
+  }
+}

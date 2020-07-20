@@ -1,0 +1,64 @@
+/* stylelint-disable declaration-no-important */
+
+// =============================================================================
+// :: Text align - left
+// =============================================================================
+.u-text-align-left {
+	text-align: left !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-text-align-left\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			text-align: left !important;
+		}
+	}
+
+	.u-text-align-left\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			text-align: left !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Text align - right
+// =============================================================================
+.u-text-align-right {
+	text-align: right !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-text-align-right\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			text-align: right !important;
+		}
+	}
+
+	.u-text-align-right\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			text-align: right !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Text align - center
+// =============================================================================
+.u-text-align-center {
+	text-align: center !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-text-align-center\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			text-align: center !important;
+		}
+	}
+
+	.u-text-align-center\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			text-align: center !important;
+		}
+	}
+}

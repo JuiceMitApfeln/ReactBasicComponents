@@ -1,0 +1,291 @@
+/* stylelint-disable declaration-no-important */
+
+// =============================================================================
+// :: Settings
+// =============================================================================
+$step: 1rem;
+$amount: 12;
+
+// =============================================================================
+// :: Margin - auto
+// =============================================================================
+.u-margin-auto {
+	margin: auto !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-margin-auto\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			margin: auto !important;
+		}
+	}
+
+	.u-margin-auto\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			margin: auto !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Margin - none
+// =============================================================================
+.u-margin-none {
+	margin: 0 !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-margin-none\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			margin: 0 !important;
+		}
+	}
+
+	.u-margin-none\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			margin: 0 !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Margin - top - none
+// =============================================================================
+.u-margin-top-none {
+	margin-top: 0 !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-margin-top-none\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			margin-top: 0 !important;
+		}
+	}
+
+	.u-margin-top-none\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			margin-top: 0 !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Margin - bottom - none
+// =============================================================================
+.u-margin-bottom-none {
+	margin-bottom: 0 !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-margin-bottom-none\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	.u-margin-bottom-none\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			margin-bottom: 0 !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Margin - left - none
+// =============================================================================
+.u-margin-left-none {
+	margin-left: 0 !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-margin-left-none\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			margin-left: 0 !important;
+		}
+	}
+
+	.u-margin-left-none\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			margin-left: 0 !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Margin - right - none
+// =============================================================================
+.u-margin-right-none {
+	margin-right: 0 !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-margin-right-none\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			margin-right: 0 !important;
+		}
+	}
+
+	.u-margin-right-none\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			margin-right: 0 !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Margin
+// =============================================================================
+@for $i from 1 through $amount {
+	.u-margin-#{$i}x {
+		margin: $i * $step !important;
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		.u-margin-#{$i}x\@above-#{$breakpoint} {
+			@include respond-at(get-breakpoint($breakpoint)) {
+				margin: $i * $step !important;
+			}
+		}
+
+		.u-margin-#{$i}x\@below-#{$breakpoint} {
+			@include respond-to(get-breakpoint($breakpoint)) {
+				margin: $i * $step !important;
+			}
+		}
+	}
+}
+
+// =============================================================================
+// :: Margin - 2 values
+// =============================================================================
+@for $i from 1 through $amount {
+	@for $j from 1 through $amount {
+		.u-margin-#{$i}x#{$j}x {
+			margin: $i * $step !important $j * $step !important;
+		}
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		@for $j from 1 through $amount {
+			.u-margin-#{$i}x#{$j}x\@above-#{$breakpoint} {
+				@include respond-at(get-breakpoint($breakpoint)) {
+					margin: $i * $step !important $j * $step !important;
+				}
+			}
+
+			.u-margin-#{$i}x#{$j}x\@below-#{$breakpoint} {
+				@include respond-to(get-breakpoint($breakpoint)) {
+					margin: $i * $step !important $j * $step !important;
+				}
+			}
+		}
+	}
+}
+
+// =============================================================================
+// :: Margin - top
+// =============================================================================
+@for $i from 1 through $amount {
+	.u-margin-top-#{$i}x {
+		margin-top: $i * $step !important;
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		.u-margin-top-#{$i}x\@above-#{$breakpoint} {
+			@include respond-at(get-breakpoint($breakpoint)) {
+				margin-top: $i * $step !important;
+			}
+		}
+
+		.u-margin-top-#{$i}x\@below-#{$breakpoint} {
+			@include respond-to(get-breakpoint($breakpoint)) {
+				margin-top: $i * $step !important;
+			}
+		}
+	}
+}
+
+// =============================================================================
+// :: Margin - bottom
+// =============================================================================
+@for $i from 1 through $amount {
+	.u-margin-bottom-#{$i}x {
+		margin-bottom: $i * $step !important;
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		.u-margin-bottom-#{$i}x\@above-#{$breakpoint} {
+			@include respond-at(get-breakpoint($breakpoint)) {
+				margin-bottom: $i * $step !important;
+			}
+		}
+
+		.u-margin-bottom-#{$i}x\@below-#{$breakpoint} {
+			@include respond-to(get-breakpoint($breakpoint)) {
+				margin-bottom: $i * $step !important;
+			}
+		}
+	}
+}
+
+// =============================================================================
+// :: Margin - right
+// =============================================================================
+@for $i from 1 through $amount {
+	.u-margin-right-#{$i}x {
+		margin-right: $i * $step !important;
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		.u-margin-right-#{$i}x\@above-#{$breakpoint} {
+			@include respond-at(get-breakpoint($breakpoint)) {
+				margin-right: $i * $step !important;
+			}
+		}
+
+		.u-margin-right-#{$i}x\@below-#{$breakpoint} {
+			@include respond-to(get-breakpoint($breakpoint)) {
+				margin-right: $i * $step !important;
+			}
+		}
+	}
+}
+
+// =============================================================================
+// :: Margin - left
+// =============================================================================
+@for $i from 1 through $amount {
+	.u-margin-left-#{$i}x {
+		margin-left: $i * $step !important;
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		.u-margin-left-#{$i}x\@above-#{$breakpoint} {
+			@include respond-at(get-breakpoint($breakpoint)) {
+				margin-left: $i * $step !important;
+			}
+		}
+
+		.u-margin-left-#{$i}x\@below-#{$breakpoint} {
+			@include respond-to(get-breakpoint($breakpoint)) {
+				margin-left: $i * $step !important;
+			}
+		}
+	}
+}
+
+.u-margin-left-auto {
+	margin-left: auto;
+}

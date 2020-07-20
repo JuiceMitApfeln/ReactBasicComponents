@@ -1,0 +1,160 @@
+// /* stylelint-disable declaration-no-important */
+
+// // =============================================================================
+// // :: Text
+// // =============================================================================
+// .u-text-red {
+//   color: $ui-color-red;
+// }
+
+// .u-text-dark-red {
+//   color: $ui-color-dark-red;
+// }
+
+// .u-text-red-o40 {
+//   color: $ui-color-red-o40;
+// }
+
+// .u-text-white {
+//   color: $white;
+// }
+
+// .u-text-blue {
+//   color: $ui-color-blue;
+// }
+
+// .u-text-cyan {
+//   color: $ui-color-cyan;
+// }
+
+// .u-text-white {
+//   color: $white;
+// }
+
+// .u-text-grey {
+//   color: $grey-49;
+// }
+
+// .u-text-dark-purple {
+//   color: $ui-color-dark-purple;
+// }
+
+// .u-text-white {
+//   color: $white;
+// }
+
+// .u-text-purple {
+//   color: $ui-color-dark-purple;
+// }
+
+// .u-text-selectable {
+//   cursor: pointer;
+// }
+
+// .u-text-strikethrough {
+//   text-decoration: line-through;
+// }
+
+// .u-text-label {
+//   color: hsl(261, 28%, 25%);
+//   font-size: 16px;
+//   font-weight: 900;
+//   line-height: 22px;
+
+//   &--required:after {
+//     color: $ui-color-dark-red;
+//     content: ' *';
+//   }
+// }
+
+// .u-text {
+//   color: $text-color-purple;
+//   &--extrablack {
+//     font-weight: $font-weight-extrablack;
+//   }
+//   &--bold {
+//     font-weight: $font-weight-bold;
+//   }
+//   &--normal {
+//     font-weight: $font-weight-normal;
+//   }
+//   &--nunito {
+//     font-family: $font-family-nunito;
+//   }
+//   &--muli {
+//     font-family: $font-family-muli;
+//   }
+//   &--center {
+//     text-align: center;
+//   }
+//   &-title {
+//     @extend .u-text;
+//     &--h1 {
+//       @extend .u-text-title, .u-text--extrablack, .u-text--muli;
+//       font-size: $font-size-3x-extra-large;
+//       line-height: $line-height-5_8;
+
+//       &.light {
+//         color: $text-color-light;
+//       }
+
+//       @media screen and (max-width: 768px) {
+//         font-size: $font-size-2x-large;
+//       }
+//     }
+//     &--h2 {
+//       @extend .u-text-title, .u-text--extrablack, .u-text--muli;
+//       font-size: $font-size-2_5x-large;
+//       line-height: $line-height-5_8;
+
+//       @media screen and (max-width: 768px) {
+//         font-size: $font-size-1_5x-large;
+//       }
+//     }
+//     &--h3 {
+//       @extend .u-text-title, .u-text--extrablack, .u-text--muli;
+//       font-size: $font-size-2x-large;
+//       line-height: $line-height-4_8;
+//     }
+//     &--h4 {
+//       @extend .u-text-title, .u-text--extrablack, .u-text--muli;
+//       font-size: $font-size-1_5x-large;
+//       line-height: $line-height-3_2;
+//     }
+//     &--h5 {
+//       @extend .u-text-title, .u-text--extrablack, .u-text--muli;
+//       font-size: $font-size-base;
+//       line-height: $line-height-1_9;
+//     }
+//     &--h5 {
+//       @extend .u-text-title, .u-text--extrablack, .u-text--muli;
+//       font-size: $font-size-base;
+//       line-height: $line-height-1_9;
+//     }
+//   }
+//   &-p {
+//     @extend .u-text;
+//     line-height: $line-height-2_4;
+//     font-size: $font-size-base;
+
+//     &--bold {
+//       @extend .u-text-p, .u-text--bold;
+//     }
+//     &--extrablack {
+//       @extend .u-text-p, .u-text--extrablack;
+//     }
+//     &--normal {
+//       @extend .u-text-p, .u-text--normal;
+//     }
+//     &--light {
+//       @extend .u-text-p, .u-text--normal;
+//       font-size: $font-size-1_4;
+//       font-style: italic;
+//       opacity: 0.56;
+//     }
+//   }
+// }
+
+// .u-text--onhover-white:hover {
+//   color: $white;
+// }

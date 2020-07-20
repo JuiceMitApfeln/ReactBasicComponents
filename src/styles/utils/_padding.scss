@@ -1,0 +1,266 @@
+/* stylelint-disable declaration-no-important */
+
+// =============================================================================
+// :: Settings
+// =============================================================================
+$step: 1rem;
+$amount: 12;
+
+// =============================================================================
+// :: Padding - none
+// =============================================================================
+.u-padding-none {
+	padding: 0 !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-padding-none\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			padding: 0 !important;
+		}
+	}
+
+	.u-padding-none\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			padding: 0 !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Padding - top - none
+// =============================================================================
+.u-padding-top-none {
+	padding-top: 0 !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-padding-top-none\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			padding-top: 0 !important;
+		}
+	}
+
+	.u-padding-top-none\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			padding-top: 0 !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Padding - bottom - none
+// =============================================================================
+.u-padding-bottom-none {
+	padding-bottom: 0 !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-padding-bottom-none\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			padding-bottom: 0 !important;
+		}
+	}
+
+	.u-padding-bottom-none\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			padding-bottom: 0 !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Padding - left - none
+// =============================================================================
+.u-padding-left-none {
+	padding-left: 0 !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-padding-left-none\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			padding-left: 0 !important;
+		}
+	}
+
+	.u-padding-left-none\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			padding-left: 0 !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Padding - right - none
+// =============================================================================
+.u-padding-right-none {
+	padding-right: 0 !important;
+}
+
+@each $breakpoint, $params in $breakpoints {
+	.u-padding-right-none\@above-#{$breakpoint} {
+		@include respond-at(get-breakpoint($breakpoint)) {
+			padding-right: 0 !important;
+		}
+	}
+
+	.u-padding-right-none\@below-#{$breakpoint} {
+		@include respond-to(get-breakpoint($breakpoint)) {
+			padding-right: 0 !important;
+		}
+	}
+}
+
+// =============================================================================
+// :: Padding
+// =============================================================================
+@for $i from 1 through $amount {
+	.u-padding-#{$i}x {
+		padding: $i * $step !important;
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		.u-padding-#{$i}x\@above-#{$breakpoint} {
+			@include respond-at(get-breakpoint($breakpoint)) {
+				padding: $i * $step !important;
+			}
+		}
+
+		.u-padding-#{$i}x\@below-#{$breakpoint} {
+			@include respond-to(get-breakpoint($breakpoint)) {
+				padding: $i * $step !important;
+			}
+		}
+	}
+}
+
+// =============================================================================
+// :: Padding - 2 values
+// =============================================================================
+@for $i from 1 through $amount {
+	@for $j from 1 through $amount {
+		.u-padding-#{$i}x#{$j}x {
+			padding: $i * $step !important $j * $step !important;
+		}
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		@for $j from 1 through $amount {
+			.u-padding-#{$i}x#{$j}x\@above-#{$breakpoint} {
+				@include respond-at(get-breakpoint($breakpoint)) {
+					padding: $i * $step !important $j * $step !important;
+				}
+			}
+
+			.u-padding-#{$i}x#{$j}x\@below-#{$breakpoint} {
+				@include respond-to(get-breakpoint($breakpoint)) {
+					padding: $i * $step !important $j * $step !important;
+				}
+			}
+		}
+	}
+}
+
+// =============================================================================
+// :: Padding - top
+// =============================================================================
+@for $i from 1 through $amount {
+	.u-padding-top-#{$i}x {
+		padding-top: $i * $step !important;
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		.u-padding-top-#{$i}x\@above-#{$breakpoint} {
+			@include respond-at(get-breakpoint($breakpoint)) {
+				padding-top: $i * $step !important;
+			}
+		}
+
+		.u-padding-top-#{$i}x\@below-#{$breakpoint} {
+			@include respond-to(get-breakpoint($breakpoint)) {
+				padding-top: $i * $step !important;
+			}
+		}
+	}
+}
+
+// =============================================================================
+// :: Padding - bottom
+// =============================================================================
+@for $i from 1 through $amount {
+	.u-padding-bottom-#{$i}x {
+		padding-bottom: $i * $step !important;
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		.u-padding-bottom-#{$i}x\@above-#{$breakpoint} {
+			@include respond-at(get-breakpoint($breakpoint)) {
+				padding-bottom: $i * $step !important;
+			}
+		}
+
+		.u-padding-bottom-#{$i}x\@below-#{$breakpoint} {
+			@include respond-to(get-breakpoint($breakpoint)) {
+				padding-bottom: $i * $step !important;
+			}
+		}
+	}
+}
+
+// =============================================================================
+// :: Padding - right
+// =============================================================================
+@for $i from 1 through $amount {
+	.u-padding-right-#{$i}x {
+		padding-right: $i * $step !important;
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		.u-padding-right-#{$i}x\@above-#{$breakpoint} {
+			@include respond-at(get-breakpoint($breakpoint)) {
+				padding-right: $i * $step !important;
+			}
+		}
+
+		.u-padding-right-#{$i}x\@below-#{$breakpoint} {
+			@include respond-to(get-breakpoint($breakpoint)) {
+				padding-right: $i * $step !important;
+			}
+		}
+	}
+}
+
+// =============================================================================
+// :: Padding - left
+// =============================================================================
+@for $i from 1 through $amount {
+	.u-padding-left-#{$i}x {
+		padding-left: $i * $step !important;
+	}
+}
+
+@each $breakpoint, $params in $breakpoints {
+	@for $i from 1 through $amount {
+		.u-padding-left-#{$i}x\@above-#{$breakpoint} {
+			@include respond-at(get-breakpoint($breakpoint)) {
+				padding-left: $i * $step !important;
+			}
+		}
+
+		.u-padding-left-#{$i}x\@below-#{$breakpoint} {
+			@include respond-to(get-breakpoint($breakpoint)) {
+				padding-left: $i * $step !important;
+			}
+		}
+	}
+}
