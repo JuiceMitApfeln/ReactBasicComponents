@@ -4,6 +4,8 @@
 
 ## Getting Started
 
+### Requirements
+
 1. NodeJS
 2. NPM
 3. Yarn
