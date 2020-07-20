@@ -4,7 +4,15 @@
 
 ## Getting Started
 
+1. NodeJS
+2. NPM
+3. Yarn
+4. React
+
 ### Installation
+
+1. yarn install
+2. yarn start
 
 ## Built With
 
