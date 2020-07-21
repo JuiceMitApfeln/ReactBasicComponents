@@ -14,7 +14,7 @@ import ProgressBar from './ProgressBar';
  * @example
  * <ProgressBarImplementation percentage={45} nrProgressbars={4} /> // will generate 4 smaller progressbars with each displaying 25% of the percentage
  */
-const CFWProgressBar = ({
+const ProgressBarImplementation = ({
   className,
   nrProgressbars,
   percentage = 0,
@@ -44,4 +44,4 @@ const CFWProgressBar = ({
   );
 };
 
-export default CFWProgressBar;
+export default ProgressBarImplementation;
