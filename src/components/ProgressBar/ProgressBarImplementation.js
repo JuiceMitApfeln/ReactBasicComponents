@@ -3,7 +3,7 @@ import { map } from 'lodash';
 import ProgressBar from './ProgressBar';
 
 /**
- * @component CFWProgressBar
+ * @component ProgressBar
  * This component creates a progressbar in which every child progressbar has the same length and the same sharepercentage.
  *
  * @param  {number} percentage The percentage parameter is used to give the percentage to it's child ProgressBars
