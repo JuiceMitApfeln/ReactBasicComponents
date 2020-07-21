@@ -7,11 +7,12 @@ export default () => {
       <div className="p-home u-flex u-flex-horizontal-center u-flex-vertical-center">
         <div className="u-width-50percent">
           <h1>
-            A progressbar
+            A basic modular progressbar
           </h1>
           <div className="u-flex u-flex-horizontal-center u-flex-vertical-center u-margin-auto u-height-100percent">
             <ProgressBarImplementation percentage={45} nrProgressbars={4} />
           </div>
+          <h6 style={{ marginTop: 5, marginBottom: 0 }}><a href="https://codepen.io/reeveng/pen/ExPGjrR">Codepen example without React</a></h6>
         </div>
       </div>
     </>
